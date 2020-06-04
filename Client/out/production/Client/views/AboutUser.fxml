@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="470.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutUserController">
+   <children>
+      <AnchorPane prefHeight="105.0" prefWidth="470.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="190.0" layoutY="39.0" prefHeight="28.0" prefWidth="385.0" text="Автосервис" textFill="#2fc916" >
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="55.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Страна">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Возраст">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#d50b0b" layoutX="84.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о пользователе">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="340.0" layoutY="418.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #fa8c06;" text="Назад" textFill="#fffefe">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="firstNameField" layoutX="235.0" layoutY="171.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastNameField" layoutX="235.0" layoutY="211.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginField" layoutX="235.0" layoutY="251.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="countryField" layoutX="235.0" layoutY="291.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ageField" layoutX="235.0" layoutY="331.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="55.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Роль">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="roleField" layoutX="235.0" layoutY="371.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="729.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnalysisResultController">
+   <children>
+      <AnchorPane prefHeight="106.0" prefWidth="729.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="324.0" layoutY="39.0" prefHeight="28.0" prefWidth="385.0" text="Автосервис" textFill="#2fc916">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="92.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оценки первого эксперта">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="479.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оценки второго эксперта">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="14.0" layoutY="153.0" prefHeight="217.0" prefWidth="276.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z1" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z2" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z3" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z4" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Z11EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Z22EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="Z33EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Z44EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="Z21EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Z31EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Z32EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="Z41EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="Z42EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="Z43EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="Z12EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="Z13EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="Z14EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="Z23EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="Z24EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="Z34EX1" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="417.0" layoutY="153.0" prefHeight="217.0" prefWidth="276.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z1" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z2" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z3" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z4" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Z22EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="Z11EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Z33EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Z44EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="Z21EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Z32EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="Z31EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Z43EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="Z42EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="Z41EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="Z12EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="Z13EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="Z14EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="Z24EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="Z23EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="Z34EX2" disable="true" prefHeight="26.0" prefWidth="37.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Text layoutX="303.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Искомые веса целей">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="W1" disable="true" layoutX="22.0" layoutY="610.0" prefHeight="26.0" prefWidth="140.0" />
+      <TextField fx:id="W2" disable="true" layoutX="208.0" layoutY="610.0" prefHeight="26.0" prefWidth="140.0" />
+      <TextField fx:id="W3" disable="true" layoutX="379.0" layoutY="610.0" prefHeight="26.0" prefWidth="140.0" />
+      <TextField fx:id="W4" disable="true" layoutX="544.0" layoutY="610.0" prefHeight="26.0" prefWidth="140.0" />
+      <Text layoutX="81.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W1">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="267.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W2">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="438.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W3">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="603.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W4">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="onwardsButton" layoutX="372.0" layoutY="677.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="122.0" style="-fx-background-color: #fa8c06;" text="Просмотр" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="564.0" layoutY="677.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="122.0" style="-fx-background-color: #fa8c06;" text="Выход" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="306.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Альтернативы ">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="alternativeField1" disable="true" layoutX="41.0" layoutY="432.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="alternativeField2" disable="true" layoutX="41.0" layoutY="511.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="alternativeField3" disable="true" layoutX="473.0" layoutY="432.0" prefHeight="26.0" prefWidth="201.0" />
+      <TextField fx:id="alternativeField4" disable="true" layoutX="474.0" layoutY="511.0" prefHeight="26.0" prefWidth="202.0" />
+      <Text layoutX="87.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Альтернатива 1">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Альтернатива 2">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="521.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Альтернатива 3">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="523.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Альтернатива 4">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
