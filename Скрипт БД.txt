@@ -1,0 +1,77 @@
+CREATE DATABASE CourseDataBase;
+USE CourseDataBase;
+
+CREATE TABLE Person
+(
+    PersonID INT PRIMARY KEY,
+    Login VARCHAR(60) NOT NULL,
+    Password VARCHAR(34) NOT NULL,
+    FirstName VARCHAR(25) NOT NULL ,
+    LastName VARCHAR(25) NOT NULL,
+    Country VARCHAR(35) NOT NULL,
+    Age INT NOT NULL,
+    Status BOOLEAN,
+    Role BOOLEAN
+);
+
+CREATE TABLE Car(
+    CarID INT PRIMARY KEY ,
+    MarkName VARCHAR(20) NOT NULL,
+    ModelName VARCHAR(15) NOT NULL,
+    TypeMotor VARCHAR(15) NOT NULL,
+    VolumeMotor DOUBLE NOT NULL
+);
+
+CREATE TABLE Detail(
+    DetailID INT PRIMARY KEY,
+    DetailName VARCHAR(60) NOT NULL,
+    ProducerName VARCHAR(60) NOT NULL,
+    Price INT NOT NULL,
+    CarId INT,
+    FOREIGN KEY (CarId) REFERENCES Car(CarID) ON DELETE CASCADE
+);
+
+CREATE TABLE Analysis
+(
+    AnalysisId INT NOT NULL PRIMARY KEY,
+    DetailId1 INT NOT NULL,
+    DetailId2 INT NOT NULL,
+    DetailId3 INT NOT NULL,
+    DetailId4 INT NOT NULL,
+    Mark1 DOUBLE,
+    Mark2 DOUBLE,
+    Mark3 DOUBLE,
+    Mark4 DOUBLE,
+    ScaleSize INT,
+    N INT,
+    FOREIGN KEY (DetailId1) REFERENCES Detail(DetailID) ON DELETE CASCADE,
+    FOREIGN KEY (DetailId2) REFERENCES Detail(DetailID) ON DELETE CASCADE,
+    FOREIGN KEY (DetailId3) REFERENCES Detail(DetailID) ON DELETE CASCADE,
+    FOREIGN KEY (DetailId4) REFERENCES Detail(DetailID) ON DELETE CASCADE
+
+);
+
+CREATE TABLE ExpertRating(
+    ExpertId INT NOT NULL PRIMARY KEY,
+    AnalysisId INT NOT NULL,
+    Mark12 INT NOT NULL,
+    Mark13 INT NOT NULL,
+    Mark14 INT NOT NULL,
+    Mark21 INT NOT NULL,
+    Mark23 INT NOT NULL,
+    Mark24 INT NOT NULL,
+    Mark31 INT NOT NULL,
+    Mark32 INT NOT NULL,
+    Mark34 INT NOT NULL,
+    Mark41 INT NOT NULL,
+    Mark42 INT NOT NULL,
+    Mark43 INT NOT NULL,
+    F1 INT NOT NULL,
+    F2 INT NOT NULL,
+    F3 INT NOT NULL,
+    F4 INT NOT NULL,
+    FOREIGN KEY (AnalysisId) REFERENCES Analysis(AnalysisId) ON DELETE CASCADE
+);
+
+INSERT INTO `coursedatabase`.`person`(`PersonID`,`Login`,`Password`,`FirstName`,`LastName`,`Country`,`Age`,`Status`,`Role`)
+VALUES (1,'admin','21232f297a57a5a743894a0e4a801fc3','Илья','Мазько','Беларусь',18,true,true);
